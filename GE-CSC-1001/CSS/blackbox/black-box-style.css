@@ -1,0 +1,99 @@
+/* 
+   CSS BOX MODEL - BLACK BOX DEMO
+   Simple version with teaching comments
+*/
+
+/* STEP 1: Reset and base setup */
+* {
+    box-sizing: border-box;
+    /* TEACHING: Makes width include padding+border (much easier!) */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* STEP 2: The basic black box style */
+.black-box {
+    background-color: black;          /* The "black box" color */
+    color: white;                     /* White text for contrast */
+    margin: 10px;                     /* Small default margin */
+    /* TEACHING: Background color fills content + padding areas */
+}
+
+/* STEP 3: First box - Just content */
+#demo1 {
+    width: 300px;     /* Content width */
+    height: 150px;    /* Content height */
+    padding: 0;       /* No padding yet */
+    border: none;     /* No border yet */
+    margin: 20px auto; /* Centers box horizontally */
+    /* TEACHING: This box is ONLY content area */
+}
+
+/* STEP 4: Second box - Add padding */
+#demo2 {
+    width: 300px;
+    height: 150px;
+    padding: 30px;    /* Add 30px padding INSIDE the box */
+    border: none;
+    margin: 30px auto;
+    /* TEACHING: Padding pushes content away from edges */
+}
+
+#demo2 .padding-area {
+    width: 100%;
+    height: 100%;
+    background-color: #666;  /* Gray shows padding area */
+    /* TEACHING: This gray area = the padding space */
+}
+
+/* STEP 5: Third box - Add border */
+#demo3 {
+    width: 300px;
+    height: 150px;
+    padding: 30px;           /* Same padding as demo2 */
+    border: 10px solid red;  /* Add visible red border */
+    margin: 30px auto;
+    /* TEACHING: Border goes AROUND the padding */
+}
+
+#demo3 .padding-area {
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+}
+
+#demo3 .border-line {
+    width: 100%;
+    height: 100%;
+    background-color: white;  /* Content area is white */
+    /* TEACHING: Inside the border, we see content area */
+}
+
+/* STEP 6: Fourth box - Complete with margin */
+#demo4 {
+    width: 300px;
+    height: 150px;
+    padding: 30px;           /* Inside space */
+    border: 10px solid blue; /* Visible edge */
+    margin: 50px auto;       /* Outside space - bigger! */
+    /* TEACHING: Margin creates space BETWEEN boxes */
+}
+
+/* STEP 7: Labels to show what we're seeing */
+.black-box p {
+    margin: 0;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+/* STEP 8: Simple responsive design */
+@media (max-width: 600px) {
+    .black-box {
+        width: 90% !important;  /* Override fixed widths on small screens */
+    }
+}

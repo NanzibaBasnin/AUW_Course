@@ -1,0 +1,7 @@
+Separation: HTML is clean, all styling is in styles.css
+
+Reusability: We could link styles.css to 100 HTML files
+
+Organization: Styles are grouped and commented
+
+Specificity: .important class targets specific elements
