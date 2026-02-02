@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Biography - Method 1: Inline CSS</title>
+</head>
+<body>
+    <!-- METHOD 1: INLINE CSS -->
+    <!-- Style applied directly to THIS h1 tag only -->
+    <h1 style="color: rgb(122, 47, 184); text-align: center;">
+        Student Biography: Alex Johnson
+    </h1>
+    
+    <div class="section">
+        <h2>About Me</h2>
+        <!-- No inline style here - this paragraph will look normal -->
+        <p>I'm a web development student passionate about creating beautiful and functional websites. I love solving problems and bringing ideas to life through code.</p>
+    </div>
+    
+    <div class="section important">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript Basics</li>
+            <li>Responsive Design</li>
+            <li>Version Control with Git</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Contact Information</h2>
+        <p>Email: alex.j@student.edu</p>
+        <p>GitHub: github.com/alexj-student</p>
+    </div>
+    
+    <footer>
+        <p>© 2023 Alex Johnson. Created for CSS Class.</p>
+    </footer>
+</body>
+</html>
+
+<!--Show students that only THIS specific <h1> is red
+
+The style is locked to this one element
+
+If we had another <h1>, it wouldn't be red unless we add style="color: red;" to it too-->

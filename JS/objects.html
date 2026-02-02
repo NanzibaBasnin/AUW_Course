@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Objects</title>
+        <!--Object groups multiple values together-->
+    </head>
+    <body>
+      <script>
+        
+        const product = {
+         //proporty : value
+          name: 'socks',//property value pair
+          price: 1090,
+        };
+
+        console.log(product);
+        console.log(product.name);//pbject name+property to access value
+        console.log(product.price);
+       //chamge property value
+        product.name = 'cotton socks';
+        console.log(product);
+
+        product.newProperty = true;//add new property
+        console.log(product);
+
+        delete product.newProperty;//delete property
+        console.log(product);
+        //Notice that object is another type of value 
+        console.log(typeof product);
+        //Why we use objects?
+        //It makes are code more organized and easier to read 
+        //Let us use multiple values together
+
+       
+       const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '5 days',//property name with hyphen must be in quotes
+        rating: {
+          stars: 4.5,
+          count: 87 //Nested object
+        },
+        fun: function function1(){
+          console.log('function inside object');
+        } // A function is just another value that can be saved inside an object = Method 
+       };
+
+       console.log(product2);
+       console.log(product2.name);
+       //another way to access property value
+       console.log(product2['name']);//bracket notation
+       //bracket notation lets use properties that do not work with dot notation
+       //console.log(product2.delivery-time);
+       console.log(product2['delivery-time']);
+       //usually use dot notation by default
+
+       //Inside the object we can save anytype of value 
+
+       //how to access values in nested object
+        console.log(product2.rating.count);
+
+        product2.fun();//call function inside object
+
+        //built in objects
+
+        console.log(typeof console);
+        console.log(typeof console.log);//log is a function that is saved inside the console object, we call it method
+
+        //Math.random() object + function = Method
+
+       //Json Built in Object - less syntax
+
+       //json doesnot support functions inside it
+       //why Json? Easy to understood by other programming languages, also used while you store data. 
+
+       
+       console.log(JSON.stringify(product2)); //is th emethod of a json object that converts a javascript object into json text
+
+       //JSOn -> Javascript Object
+
+       //JSON.parse(JSON.stringify(product2));
+       const jsonString = JSON.stringify(product2);
+       console.log(JSON.parse(jsonString));//converts json text back to javascript object
+
+       //local Storage used to save values more permanently 
+       //Variables are temporary, once you refresh the page the values are lost
+       //Autoboxing in JS 
+
+       console.log('hello'.length);
+       console.log('hello'.toUpperCase());
+
+
+
+
+      
+
+      
+
+
+
+
+
+
+        
+        
+      </script>
+    </body>
+</html>     
+    

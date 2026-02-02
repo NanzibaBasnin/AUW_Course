@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model - Black Box Demo</title>
+    <link rel="stylesheet" href="black-box-style.css">
+    <!-- TEACHING: External CSS file - best practice we learned! -->
+</head>
+<body>
+    <h1>📦 The CSS Box Model: Black Box Demo</h1>
+    
+    <!-- DEMO 1: Basic Black Box -->
+    <div class="black-box" id="demo1">
+        <p>Content Area</p>
+    </div>
+    <!-- TEACHING: This div is our "black box" element -->
+    
+    <!-- DEMO 2: Box with visible padding -->
+    <div class="black-box" id="demo2">
+        <div class="padding-area">
+            <p>Content with Padding</p>
+        </div>
+    </div>
+    <!-- TEACHING: We'll make the padding area light gray -->
+    
+    <!-- DEMO 3: Box with padding AND border -->
+    <div class="black-box" id="demo3">
+        <div class="padding-area">
+            <div class="border-line">
+                <p>Content + Padding + Border</p>
+            </div>
+        </div>
+    </div>
+    <!-- TEACHING: Nested divs show each layer clearly -->
+    
+    <!-- DEMO 4: Box with everything (including margin) -->
+    <div class="black-box" id="demo4">
+        <p>Complete Box: Content + Padding + Border + Margin</p>
+    </div>
+    <!-- TEACHING: This one will have space around it (margin) -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Visual Demo</title>
+    <link rel="stylesheet" href="blackbox.css">
+    <!-- LINK: This connects our CSS file -->
+</head>
+<body>
+    <!-- HEADER: Page title -->
+    <header>
+        <h1> The CSS Box Model</h1>
+        <p>Every HTML element is a rectangular box with 4 layers</p>
+    </header>
+
+    <!-- MAIN CONTENT: Our box model demo -->
+    <main>
+        <!-- DEMO BOX 1: The basic box -->
+        <div class="demo-box" id="basic-box">
+            <!-- CONTENT: The actual text/images inside -->
+            <div class="content">
+                <h2>Content</h2>
+                <p>Text, images, or videos</p>
+                <p>Width: 300px</p>
+                <p>Height: 200px</p>
+            </div>
+        </div>
+
+        <!-- DEMO BOX 2: Box with visible layers -->
+        <div class="demo-box layered-box">
+            <!-- PADDING LAYER: Will be light gray -->
+            <div class="padding-layer">
+                <!-- BORDER LAYER: Will be black line -->
+                <div class="border-layer">
+                    <!-- CONTENT: Inner-most layer -->
+                    <div class="content">
+                        <h2>Content + Padding + Border</h2>
+                        <p>See all three layers visually!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO BOX 3: Box with margin -->
+        <div class="demo-box" id="spaced-box">
+            <div class="content">
+                <h2>With Margin</h2>
+                <p>Notice the space outside the border!</p>
+            </div>
+        </div>
+
+        <!-- INFO SECTION: Explains each part -->
+        <section class="explanation">
+            <div class="box-part" id="content-explain">
+                <h3>1. Content</h3>
+                <p>The actual stuff inside: text, images, etc.</p>
+                <p>Set with <code>width</code> and <code>height</code></p>
+            </div>
+            
+            <div class="box-part" id="padding-explain">
+                <h3>2. Padding</h3>
+                <p>Space INSIDE, between content and border</p>
+                <p>Same background color as the element</p>
+            </div>
+            
+            <div class="box-part" id="border-explain">
+                <h3>3. Border</h3>
+                <p>The visible edge around padding</p>
+                <p>Has style, width, and color</p>
+            </div>
+            
+            <div class="box-part" id="margin-explain">
+                <h3>4. Margin</h3>
+                <p>Space OUTSIDE, between elements</p>
+                <p>Always transparent</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: Activity instructions -->
+    <footer>
+        <h3>Try it yourself!</h3>
+        <p>Open DevTools (F12) and change the CSS values</p>
+        <p>Experiment with different padding, border, and margin sizes</p>
+    </footer>
+</body>
+</html>

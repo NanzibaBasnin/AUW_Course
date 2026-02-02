@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- HTML5 document -->
+
+<html>
+  <head>
+    <title>Web Development Course Portal</title>
+  </head>
+
+  <body>
+    <!-- ========================= -->
+    <!-- PAGE HEADER -->
+    <!-- ========================= -->
+
+    <h1 id="top">Introduction to Web Development (HTML)</h1>
+
+    <p>
+      This webpage combines everything we learned in HTML:
+      text, lists, tables, images, links, and a working form.
+    </p>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- NAVIGATION -->
+    <!-- ========================= -->
+
+    <h2>Page Navigation</h2>
+
+    <p>
+      <a href="#topics">Course Topics</a><br>
+      <a href="#schedule">Course Schedule</a><br>
+      <a href="#register">Student Registration Form</a>
+    </p>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- LISTS SECTION -->
+    <!-- ========================= -->
+
+    <h2 id="topics">1) Course Topics</h2>
+
+    <p>Technologies covered in this course:</p>
+
+    <!-- Unordered List -->
+    <ul>
+      <li>HTML – Page structure</li>
+      <li>CSS – Page styling (later)</li>
+      <li>JavaScript – Page behavior (later)</li>
+    </ul>
+
+    <p>Steps to build a webpage:</p>
+
+    <!-- Ordered List -->
+    <ol>
+      <li>Create an HTML file</li>
+      <li>Write HTML code</li>
+      <li>Open the file in a browser</li>
+    </ol>
+
+    <!-- Description List -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Used to create the structure of a webpage</dd>
+
+      <dt>Browser</dt>
+      <dd>Software that displays HTML files</dd>
+    </dl>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- TABLE SECTION -->
+    <!-- ========================= -->
+
+    <h2 id="schedule">2) Course Schedule</h2>
+
+    <p>The table below shows what we learn each week.</p>
+
+    <table border="1">
+      <tr>
+        <th>Week</th>
+        <th>Topic</th>
+        <th>Practice</th>
+      </tr>
+
+      <tr>
+        <td>Week 1</td>
+        <td>HTML Basics</td>
+        <td>Headings, paragraphs</td>
+      </tr>
+
+      <tr>
+        <td>Week 2</td>
+        <td>Lists & Tables</td>
+        <td>ul, ol, table</td>
+      </tr>
+
+      <tr>
+        <td>Week 3</td>
+        <td>Forms</td>
+        <td>Input, radio, checkbox</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- IMAGE SECTION -->
+    <!-- ========================= -->
+
+    <h2>3) Example Image</h2>
+
+    <p>
+      This is an example of an image element.
+      (Put an image file in the same folder.)
+    </p>
+
+    <img src="images.jpeg" alt="Web class example" width="250">
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- FORM SECTION (IMPORTANT) -->
+    <!-- ========================= -->
+
+    <h2 id="register">4) Student Registration Form</h2>
+
+    <p>
+      This form collects student information.
+      The data is not saved yet because backend is not added.
+    </p>
+
+    <form action="#" method="post">
+      <!-- Name -->
+      <p>
+        <label for="name">Student Name:</label><br>
+        <input type="text" id="name" name="name">
+      </p>
+
+      <!-- Password -->
+      <p>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+      </p>
+
+      <!-- Radio buttons -->
+      <p>
+        Section:<br>
+        <input type="radio" id="s1" name="section" value="1">
+        <label for="s1">Section 1</label><br>
+
+        <input type="radio" id="s2" name="section" value="2">
+        <label for="s2">Section 2</label>
+      </p>
+
+      <!-- Checkbox -->
+      <p>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">
+          I confirm that I understand basic HTML concepts
+        </label>
+      </p>
+
+      <!-- Submit -->
+      <p>
+        <input type="submit" value="Register">
+      </p>
+    </form>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <p>
+      <a href="#top">Back to top</a>
+    </p>
+
+    <p>
+      End of Course Portal Page ✅
+    </p>
+
+  </body>
+</html>
