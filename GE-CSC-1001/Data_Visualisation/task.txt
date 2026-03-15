@@ -1,0 +1,21 @@
+Student Task
+
+Students should:
+
+1. Load the CSV dataset.
+
+2. Extract Age and PhoneHours.
+
+3. Create a line graph.
+
+4. Add labels, title, and grid.
+
+5. Answer:
+
+Questions
+
+A. What trend do you observe between age and phone usage?
+
+B. Do younger people spend more time on their phones?
+
+3. Does phone usage increase or decrease with age?
