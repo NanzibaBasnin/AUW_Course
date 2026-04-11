@@ -7,6 +7,9 @@ with open("students.csv") as file:
         students.append(student)
 
 
+#def get_name(student):
+    #return student["name"]
+
 def get_house(student):
     return student["house"]
 

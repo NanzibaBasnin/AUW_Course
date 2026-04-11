@@ -7,12 +7,9 @@ with open("students.csv") as file:
         students.append(student)
 
 
-def get_name(student):
-    return student["name"]
 
-#python allows to pass functions as parameters 
 
-for student in sorted(students, key=get_name, reverse = True): #impossible to sort dictionary 
+for student in sorted(students): #impossible to sort dictionary 
     print(f"{student['name']} is in {student['house']}")
     
 

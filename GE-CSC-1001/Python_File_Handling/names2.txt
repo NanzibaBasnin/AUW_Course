@@ -4,3 +4,6 @@ Rone
 Harry
 Ron
 Hermione
+Harry
+Ron
+Hermione

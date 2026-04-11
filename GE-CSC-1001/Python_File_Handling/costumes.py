@@ -3,6 +3,8 @@ from PIL import Image
 
 images = []
 
+print(sys.argv[0])
+
 for arg in sys.argv[1:]:
     image = Image.open(arg)
     images.append(image)

@@ -1,6 +1,6 @@
 #reverse the file list 
 names =[]
-with open("C:\Users\HP\Desktop\task\Python\students.csv") as file: 
+with open("C:\Users\HP\") as file: 
     for line in file:
          names.append(line.restrip())
         
